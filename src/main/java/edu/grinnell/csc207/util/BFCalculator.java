@@ -2,7 +2,7 @@ package edu.grinnell.csc207.util;
 
 public class BFCalculator {
 
-    BigFraction lastValue;
+    BigFraction lastValue = new BigFraction(0, 1);
 
     public BigFraction get() {
         return lastValue;
@@ -25,6 +25,6 @@ public class BFCalculator {
     }
 
     public void clear() {
-        lastValue = new BigFraction(0, 0);
+        lastValue = new BigFraction(0, 1);
     }
 }

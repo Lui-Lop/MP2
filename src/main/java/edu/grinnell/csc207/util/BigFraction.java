@@ -28,7 +28,7 @@ public class BigFraction {
   // +-----------+
 
   /** The default numerator when creating fractions. */
-  private static final BigInteger DEFAULT_NUMERATOR = BigInteger.valueOf(1);
+  private static final BigInteger DEFAULT_NUMERATOR = BigInteger.valueOf(0);
 
   /** The default denominator when creating fractions. */
   private static final BigInteger DEFAULT_DENOMINATOR = BigInteger.valueOf(1);
@@ -86,8 +86,16 @@ public class BigFraction {
    *   The fraction in string form
    */
   public BigFraction(String str) {
-    this.num = DEFAULT_NUMERATOR;
-    this.denom = DEFAULT_DENOMINATOR;
+    String[] fract = str.split("/");
+    if (fract.length == 1) {
+      this.num = new BigInteger(fract[0]);
+      this.denom = DEFAULT_DENOMINATOR;
+    } else if (fract.length == 2) {
+      this.num = new BigInteger(fract[0]);
+      this.denom = new BigInteger(fract[1]);
+    } else {
+
+    }
   } // BigFraction
 
   // +---------+------------------------------------------------------
@@ -193,14 +201,16 @@ public class BigFraction {
    * @return a string that represents the fraction.
    */
   public String toString() {
+
+    BigFraction simp = this.simplify();
     // Special case: It's zero
-    if (this.num.equals(BigInteger.ZERO)) {
+    if (simp.num.equals(BigInteger.ZERO)) {
       return "0";
     } // if it's zero
 
     // Lump together the string represention of the numerator,
     // a slash, and the string representation of the denominator
     // return this.num.toString().concat("/").concat(this.denom.toString());
-    return this.num + "/" + this.denom;
+    return simp.num + "/" + simp.denom;
   } // toString()
 } // class BigFraction

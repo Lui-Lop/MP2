@@ -15,7 +15,7 @@ public class InteractiveCalculator {
 
         for (;;) {
             String raw = input.nextLine();
-            if (raw.equals("EXIT")) {
+            if (raw.equals("CLOSE")) {
                 input.close();
                 return;
             }
@@ -24,10 +24,8 @@ public class InteractiveCalculator {
             String lastInput;
             
             for (int i = 0; i < commands.length; i++) {
-                if (commands[i].equals("+")) {
-                    lastInput = new String("+");
-                } else if (commands[i].equals("-")) {
-
+                if (i == 0) {
+                    
                 }
             }
 
