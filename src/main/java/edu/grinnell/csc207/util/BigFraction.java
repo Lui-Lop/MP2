@@ -28,10 +28,10 @@ public class BigFraction {
   // +-----------+
 
   /** The default numerator when creating fractions. */
-  private static final BigInteger DEFAULT_NUMERATOR = BigInteger.valueOf(0);
+  private static final BigInteger DEFAULT_NUMERATOR = BigInteger.valueOf(1);
 
   /** The default denominator when creating fractions. */
-  private static final BigInteger DEFAULT_DENOMINATOR = BigInteger.valueOf(0);
+  private static final BigInteger DEFAULT_DENOMINATOR = BigInteger.valueOf(1);
 
   // +--------+-------------------------------------------------------
   // | Fields |

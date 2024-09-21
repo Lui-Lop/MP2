@@ -1,8 +1,5 @@
 package edu.grinnell.csc207.util;
 
-import java.math.BigInteger;
-import edu.grinnell.csc207.util.BigFraction;
-
 public class BFCalculator {
 
     BigFraction lastValue;
@@ -28,6 +25,6 @@ public class BFCalculator {
     }
 
     public void clear() {
-        lastValue = BigFraction(BigInteger.valueOf(0), BigInteger.valueOf(0));
+        lastValue = new BigFraction(0, 0);
     }
 }
