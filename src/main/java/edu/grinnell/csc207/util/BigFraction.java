@@ -94,8 +94,10 @@ public class BigFraction {
       this.num = new BigInteger(fract[0]);
       this.denom = new BigInteger(fract[1]);
     } else {
-
+      this.num = BigInteger.valueOf(0);
+      this.denom = BigInteger.valueOf(0);
     }
+    
   } // BigFraction
 
   // +---------+------------------------------------------------------
@@ -131,7 +133,7 @@ public class BigFraction {
       (this.num.multiply(addend.denom)).add(addend.num.multiply(this.denom));
 
     // Return the computed value
-    return new BigFraction(resultNumerator, resultDenominator);
+    return new BigFraction(resultNumerator, resultDenominator).simplify();
   } // add(BigFraction)
 
   public BigFraction multiply(BigFraction multied) {
@@ -208,9 +210,13 @@ public class BigFraction {
       return "0";
     } // if it's zero
 
+    if (simp.denom.equals(BigInteger.valueOf(1))) {
+      return simp.num + "";
+    } else {
     // Lump together the string represention of the numerator,
     // a slash, and the string representation of the denominator
     // return this.num.toString().concat("/").concat(this.denom.toString());
-    return simp.num + "/" + simp.denom;
+     return simp.num + "/" + simp.denom;
+    }
   } // toString()
 } // class BigFraction

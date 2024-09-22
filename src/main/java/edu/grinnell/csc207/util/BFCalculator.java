@@ -8,6 +8,10 @@ public class BFCalculator {
         return lastValue;
     }
 
+    public void set(BigFraction val) {
+        lastValue = val;
+    }
+
     public void add(BigFraction val) {
         lastValue = get().add(val);
     }
