@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestMP02
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.046 s <<< FAILURE! -- in TestMP02
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.043 s <<< FAILURE! -- in TestMP02
 TestMP02.testBfParseSimplify -- Time elapsed: 0.001 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: M: Parsing and simplifying 3a ==> expected: <3> but was: <15>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)

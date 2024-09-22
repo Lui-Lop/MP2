@@ -25,10 +25,6 @@ public class InteractiveCalculator {
 
             String[] commands = raw.split(" ");
 
-            if (commands[0].equals("STORE")) {
-                register.store(commands[1].charAt(0), calc.get());
-                pen.println("STORED");
-            }
 
 
             String lastCommand = "num";
@@ -36,18 +32,27 @@ public class InteractiveCalculator {
             for (int i = 0; i < commands.length; i++) {
                 String curr = commands[i];
 
-                if (i == 0) {
+               // pen.println(commands[i]);
+
+                if (curr.length() == 1 && curr.charAt(0) <= 'z' && curr.charAt(0) >= 'a') {
+                    calc.set(register.get(curr.charAt(0)));
+                }
+                if (commands[0].equals("STORE")) {
+                    register.store(commands[1].charAt(0), calc.get());
+                    pen.println("STORED");
+                    break;
+                } else if (i == 0) {
                     BigFraction temp = new BigFraction(commands[i]);
                     calc.set(temp);
                 } else if (curr.equals("+") || curr.equals("/") || curr.equals("-") || curr.equals("*")) {
                     if (lastCommand.equals("+") || lastCommand.equals("/") || lastCommand.equals("-") || lastCommand.equals("*")) {
-                        System.err.println("");
+                        System.err.println("Can't Take Sucessive Math Functions");
                         input.close();
                         return;
                     }
                     lastCommand = curr;
                 } else if (lastCommand.equals("num")) {
-                    System.err.println("Can't take number after number");
+                    System.err.println("Can't Take Successive Numbers");
                     input.close();
                     return;
                 } else if (lastCommand.equals("+")) {
@@ -68,7 +73,6 @@ public class InteractiveCalculator {
                     pen.println(calc.get().toString());
                 }
             }
-
 
             pen.flush();
             

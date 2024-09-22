@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestMP02" time="0.046" tests="23" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestMP02" time="0.043" tests="23" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/ruk/home/lopezlui/csc207/fraction/mp02/target/surefire/surefirebooter-20240922125746828_3.jar /Users/ruk/home/lopezlui/csc207/fraction/mp02/target/surefire 2024-09-22T12-57-46_787-jvmRun1 surefire-20240922125746828_1tmp surefire_0-20240922125746828_2tmp"/>
+    <property name="sun.java.command" value="/Users/ruk/home/lopezlui/csc207/fraction/mp02/target/surefire/surefirebooter-20240922130051949_3.jar /Users/ruk/home/lopezlui/csc207/fraction/mp02/target/surefire 2024-09-22T13-00-51_908-jvmRun1 surefire-20240922130051949_1tmp surefire_0-20240922130051949_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/ruk/home/lopezlui/csc207/fraction/mp02/target/test-classes:/Users/ruk/home/lopezlui/csc207/fraction/mp02/target/classes:/Users/ruk/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/ruk/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/ruk/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/ruk/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/Users/ruk/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/ruk/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/ruk/home/lopezlui/csc207/fraction/mp02/target/surefire/surefirebooter-20240922125746828_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/ruk/home/lopezlui/csc207/fraction/mp02/target/surefire/surefirebooter-20240922130051949_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23"/>
@@ -58,26 +58,26 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testBfcClearAfterAdd" classname="TestMP02" time="0.018"/>
-  <testcase name="testBfSimplify" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfcClearAfterAdd" classname="TestMP02" time="0.016"/>
+  <testcase name="testBfSimplify" classname="TestMP02" time="0.0"/>
   <testcase name="testBfParseNegative" classname="TestMP02" time="0.001"/>
-  <testcase name="testBfMultiply" classname="TestMP02" time="0.001"/>
-  <testcase name="testBFcInit" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfMultiply" classname="TestMP02" time="0.0"/>
+  <testcase name="testBFcInit" classname="TestMP02" time="0.0"/>
   <testcase name="testBfrsIndependentUpdate" classname="TestMP02" time="0.001"/>
   <testcase name="testBfcMultiply" classname="TestMP02" time="0.001"/>
-  <testcase name="testBfcClear" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfcClear" classname="TestMP02" time="0.0"/>
   <testcase name="testBfAdd" classname="TestMP02" time="0.0"/>
-  <testcase name="testBfParseWhole" classname="TestMP02" time="0.002"/>
-  <testcase name="testBfReturnWhole" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfParseWhole" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfReturnWhole" classname="TestMP02" time="0.0"/>
   <testcase name="testBfParse" classname="TestMP02" time="0.0"/>
-  <testcase name="testBfcMany" classname="TestMP02" time="0.0"/>
-  <testcase name="testBfrsNew" classname="TestMP02" time="0.001"/>
-  <testcase name="testBfrsBasics" classname="TestMP02" time="0.001"/>
-  <testcase name="testBfSubtract" classname="TestMP02" time="0.0"/>
-  <testcase name="testBfrsUpdate" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfcMany" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfrsNew" classname="TestMP02" time="0.0"/>
+  <testcase name="testBfrsBasics" classname="TestMP02" time="0.0"/>
+  <testcase name="testBfSubtract" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfrsUpdate" classname="TestMP02" time="0.0"/>
   <testcase name="testBfcSubtract" classname="TestMP02" time="0.0"/>
-  <testcase name="testBfcDivide" classname="TestMP02" time="0.0"/>
-  <testcase name="testBfcAdd" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfcDivide" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfcAdd" classname="TestMP02" time="0.0"/>
   <testcase name="testBfcNew" classname="TestMP02" time="0.0"/>
   <testcase name="testBfParseSimplify" classname="TestMP02" time="0.001">
     <failure message="M: Parsing and simplifying 3a ==&gt; expected: &lt;3&gt; but was: &lt;15&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: M: Parsing and simplifying 3a ==> expected: <3> but was: <15>
@@ -158,5 +158,5 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
   </testcase>
-  <testcase name="testBfDivide" classname="TestMP02" time="0.001"/>
+  <testcase name="testBfDivide" classname="TestMP02" time="0.0"/>
 </testsuite>

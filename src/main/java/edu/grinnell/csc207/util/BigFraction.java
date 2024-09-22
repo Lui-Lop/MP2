@@ -94,8 +94,8 @@ public class BigFraction {
       this.num = new BigInteger(fract[0]);
       this.denom = new BigInteger(fract[1]);
     } else {
-      this.num = BigInteger.valueOf(0);
-      this.denom = BigInteger.valueOf(0);
+      this.num = DEFAULT_NUMERATOR;
+      this.denom = DEFAULT_DENOMINATOR;
     }
     
   } // BigFraction
