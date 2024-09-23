@@ -25,8 +25,6 @@ public class QuickCalculator {
     for (String str : args) {
       pen.print(str + " -> ");
 
-    
-
       String[] commands = str.split(" ");
 
       String lastCommand = "num";
