@@ -2,6 +2,8 @@ package edu.grinnell.csc207.util;
 
 /**
  * util function to be used in main classes.
+ *
+ * @author Luis Lopez
  */
 public class BFRegisterSet {
   /**

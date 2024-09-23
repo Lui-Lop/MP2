@@ -2,6 +2,8 @@ package edu.grinnell.csc207.util;
 
 /**
  * util functions for classes InteractiveCalculator and QuickCalculator.
+ *
+ * @author Luis Lopez
  */
 public class BFCalculator {
 

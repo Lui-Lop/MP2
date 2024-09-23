@@ -9,6 +9,8 @@ import edu.grinnell.csc207.util.BFCalculator;
 
 /**
  * Class to create a calculator that takes constant input until called to close.
+ *
+ * @author Luis Lopez
  */
 public class InteractiveCalculator {
 /**

@@ -9,6 +9,8 @@ import edu.grinnell.csc207.util.BFCalculator;
 /**
  * Calculator that takes in multiple math calls at the same time to be done in
  * one instance.
+ *
+ * @author Luis Lopez
  */
 public class QuickCalculator {
   /**
